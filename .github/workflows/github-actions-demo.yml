@@ -3,7 +3,7 @@ on:
   push:
     branches: main
     paths-ignore: 
-      - '.github/**'
+      - .github/**
   pull_request:
     branches: 
       - main
@@ -17,3 +17,6 @@ jobs:
     steps:
       - run: |
           echo "Event name: " ${{ github.event_name }}
+          echo "Branch: " ${{ github.branch_name }}
+          ls -l
+          
