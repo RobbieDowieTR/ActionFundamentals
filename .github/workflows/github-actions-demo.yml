@@ -19,6 +19,6 @@ jobs:
       
       - run: |
           echo "Event name: ${{ github.event_name }}"
-          echo "Branch: " ${{ github.ref_name }}
-          ls -l
+          echo "Branch: ${{ github.ref_name }}"
+          tree
           
